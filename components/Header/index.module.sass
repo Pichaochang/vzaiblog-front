@@ -1,0 +1,42 @@
+.header
+  display: flex
+  margin: 0 auto
+  max-width: 1280px
+  &:hover
+    background: rgba(255,255,255,.61)
+    // overflow: hidden
+    // height: 5rem
+    // border-bottom: 1px solid #eee
+    // user-select: none
+    // border: none
+  &-menu
+    width: 100%
+    :global
+      .ant-menu
+        background-color: rgba(0,0,0,0)
+      .ant-menu-horizontal
+        height: 100%
+        border: none
+      .ant-menu-item
+        height: 100%
+        line-height: 5rem
+      .menu-item-selected
+        border-width: 4px
+  &-title
+    display: inline-block
+    margin-right: 1.5rem
+  &-img
+    margin-left: 2rem
+    width: 3rem
+    border-radius: 50%
+  &-logo
+    color: #1e90ff
+    font-size: 2.5rem
+    text-align: left
+    margin-left: 1rem
+
+  &-txt
+    display: inline-block
+    padding-left: 0.3rem
+    font-size: 1rem
+    color: #999

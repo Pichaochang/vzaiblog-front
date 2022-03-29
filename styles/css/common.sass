@@ -1,0 +1,232 @@
+.comm-container
+  position: relative
+  margin: 0 auto
+  max-width: 960px
+  &-main
+    margin-top: 30px
+    width: 100%
+  &-left
+    width: 700px
+    border-radius: 0.3rem
+    margin-bottom: 1rem
+    margin-right: 21.667rem
+  &-right
+    position: absolute
+    top: 0
+    right: 0
+    width: 20rem
+    border-radius: 0.3rem
+    .bread-div
+      color: rgba(0, 0, 0, 0.85)
+      font-weight: 500
+      font-size: 16px
+      white-space: nowrap
+      box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.5)
+      border-radius: 0.3rem
+      padding: 10px
+      background-color: #fff
+.comm-bigbox
+  position: relative
+  width: 100%
+  z-index: 2
+  &-header
+    box-shadow: 0 5px 15px -5px rgb(0 0 0 / 50%)
+    background-color: rgba(0,0,0,0)
+
+.comm-box
+  background-color: #fff
+  margin-bottom: 0.5rem
+  border-radius: 0.3rem
+.list
+  &-container
+    margin-top: 1.5rem
+  &-img
+    width: 100%
+  &-header
+    font-weight: 500
+    font-size: 16px
+    white-space: nowrap
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.5)
+    padding: 10px
+    border-radius: 0.3rem
+    background-color: #fff
+
+  &-item
+    position: relative
+    padding: 15px 23px 23px
+    margin-bottom: 0.8rem
+    border-radius: 1.5rem
+    background-color: #fff
+    box-shadow: 0px 0px 20px rgba(217,217,217,0.502)
+    transition: all 0.4s ease-out
+    &-header
+      position: absolute
+      top: -20px
+      left: -15px
+      width: 40px
+      height: 40px
+      padding: 10px
+      border-radius: 50%
+      color: #fff
+      background-color: #fb7299
+      border-radius: 50%
+      text-align: center
+      line-height: 1.4
+      letter-spacing: 2px
+      margin-bottom: 1em
+      margin-left: 5px
+      text-shadow: 0 1px #fff
+      font-weight: bold
+      box-sizing: content-box
+      &-month
+        font-size: 12px
+      &-day
+        font-size: 20px
+    &:hover
+      transform: translate3d(-5px, -5px, 0)
+    &-read-btn
+      position: absolute
+      cursor: pointer
+      background: linear-gradient(120deg, #1890ff 0%, #1890ff9e 100%)
+      border: 0
+      padding: 7px 24px
+      color: #fff
+      font-weight: bold
+      border-radius: 16px 0
+      font-size: 12px
+      bottom: -4px
+      right: 0px
+      z-index: 4
+      user-select: none
+      transition: all 0.2s ease-out
+      box-shadow: 2px 2px 10px 0px rgba(255,187,244,0.478)
+      &:hover
+        right: -7px
+        box-shadow: -2px -2px 10px 0px rgba(154,187,247,0.478)
+    &-edit-time
+      position: absolute
+      font-size: 12px
+      bottom: 2px
+      left: -3px
+      padding: 7px 24px
+      color: #aaa
+  &-dashed
+    border-bottom: 1px solid #ddd
+    height: 0px
+    margin-bottom: 1rem
+
+  &-title
+    font-size: 1.8rem
+    padding: 0 0.5rem
+    &-a
+      display: inline-block
+      word-break: break-all
+      position: relative
+      color: #555
+      font-weight: bold
+      padding-bottom: 5px
+      &::before
+        content: ""
+        position: absolute
+        z-index: -1
+        left: 50%
+        right: 50%
+        bottom: 0px
+        background: #258fb8
+        height: 2px
+        transition-property: left, right
+        transition-duration: 0.3s
+        transition-timing-function: ease-out
+      &:hover
+        color: #258fb8
+
+      &:hover::before
+        left: 0
+        right: 0
+
+.list-icon
+  padding: 0.5rem 0
+  text-align: center
+  color: #aaa
+
+  & span
+    display: inline-block
+    padding: 0 10px
+
+.list-context img
+  width: 100%
+  border-radius: 5px
+  border: 1px solid #f0f0f0
+  max-width: 1000px !important
+  display: block
+  margin: 8px auto
+.bgcCanvas
+  position: absolute
+  top: 0px
+  // bottom 0px
+  height: 100%
+  width: 100%
+  background-color: #090723
+  z-index: -1
+.gaffix
+  position: fixed
+  width: 30px
+  height: 30px
+  &-anchor
+    cursor: pointer
+    width: 44px
+    height: 44px
+    line-height: 44px
+    font-size: 22px
+    background-color: #fff
+    border-radius: 50%
+    text-align: center
+    &:hover
+      background: #258fb8
+      color: #fff
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px)
+  .gaffix
+    bottom: 3rem
+    right: 3rem
+  .comm-container-right, .area-right
+    display: none
+  .main-area
+    margin-left: 0
+    width: 100%!important
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px)
+  .gaffix
+    bottom: 7rem
+    right: 3rem
+  
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px)
+  .gaffix
+    bottom: 7rem
+    right: 3rem
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px)
+  .gaffix
+    bottom: 7rem
+    right: 3rem
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px)
+  .gaffix
+    bottom: 8rem
+    right: 6rem
+@media (max-width: 1000px)
+  .comm-container-right
+    display: none
+  .comm-container-left
+    width: 100%
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media (min-width: 1400px)
+  .gaffix
+    bottom: 8rem
+    right: 7rem

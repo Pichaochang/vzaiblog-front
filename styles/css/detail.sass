@@ -1,0 +1,81 @@
+.detail
+  margin-top: 5px
+  border-radius: 0.5rem
+  background-color: #ffffff
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.5)
+  .detailed-content
+    padding: 3.33rem 2.667rem 2.667rem
+    box-sizing: border-box
+    font-size: 1rem
+  .detailed-content img
+    width: 100%
+    border: 1px solid #f3f3f3
+  &-container
+    position: relative
+    margin: 0 auto
+    width: 100%
+    max-width: 1140px
+    &-view
+      position: relative
+      padding-bottom: 2.667rem
+      margin-top: 1.767rem
+      .main-area
+        width: calc(100% - 26.67rem)
+        box-sizing: border-box
+        margin-bottom: 3rem
+        .area-left
+          border-radius: 0.3rem
+          box-shadow: 0px 0px 20px rgb(217 217 217 / 50%)
+        .area-right
+          position: absolute
+          top: 0
+          right: 0
+          width: 25rem
+          .toc-container
+            box-shadow: 0px 0px 20px rgb(217 217 217 / 50%)
+            padding: 1rem
+            margin-top: 1rem
+
+  &-title
+    font-size: 2.667rem
+    font-weight: 600
+    text-align: center
+    padding: 2.667rem 0.5rem 0
+    user-select: none
+  &-img
+    width: 100%
+    &-a
+      display: inline-block
+      word-break: break-all
+      position: relative
+      color: #555
+      font-weight: bold
+      padding-bottom: 5px
+      &::before
+        content: ""
+        position: absolute
+        z-index: -1
+        left: 50%
+        right: 50%
+        bottom: 0px
+        background: #258fb8
+        height: 2px
+        transition-property: left, right
+        transition-duration: 0.3s
+        transition-timing-function: ease-out
+      &:hover
+        color: #258fb8
+
+      &:hover::before
+        z-index: 1
+        left: 0
+        right: 0
+   
+@media (max-width: 1000px)
+  .main-area
+    width: 100%!important
+  .area-left
+    margin-left: 0rem
+  .area-right
+    display: none
+
